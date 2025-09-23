@@ -5,6 +5,6 @@ NList = list(sys.stdin.readline().rstrip())
 result = 0
 
 for i in range(len(NList)):
-    result += (((ord(NList[i]) - 96) * (31 ** i)) % 1234567891)
+    result += (((ord(NList[i]) - 96) * (31 ** i)))
 
-print(result)
+print(result % 1234567891)
